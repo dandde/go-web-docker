@@ -275,3 +275,11 @@ but we have to set the variable to some value to avoid getting an error.
 ```
 $ docker-compose config
 ```
+### Build and run the application using Docker Compose
+
+Let’s start our application and confirm that it is running properly.
+
+```
+docker-compose up --build
+
+```
