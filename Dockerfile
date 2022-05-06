@@ -2,10 +2,10 @@
 FROM golang:latest
 
 # Copy the local package files to the container's workspace.
-ADD . /go/src/github.com/shijuvar/golang-docker
+ADD . /go/src/github.com/dandde/golang-docker
 
 # Build the golang-docker command inside the container.
-RUN go install github.com/shijuvar/golang-docker
+RUN go install github.com/dandde/golang-docker
 
 # Run the golang-docker command by default when the container starts.
 ENTRYPOINT /go/bin/golang-docker
